@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Bootstrap if installed locally (adjust folder name if needed)
+bootstrap/
+
+# Optional: ignore Bootstrap if installed under public/vendor or similar paths
+public/vendor/bootstrap/
+assets/bootstrap/
+
+# Optional OS or editor files (good practice)
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore environment variables
+.env
+
