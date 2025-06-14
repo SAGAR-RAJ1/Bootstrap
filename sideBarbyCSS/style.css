@@ -11,21 +11,27 @@
 background-image: url(photo.jpg);
 height: 100vh;
 }
+
 .btn_one i{
     font-size: 30px;
     font-weight: 700;
     position: absolute;
     line-height: 60px;
     cursor: pointer;
+    left: 10px;
+    transition: all 0.3s ;
+
+  
 }
 .sidebar_menu{
     position: fixed;
-    /* left: -300px; */
+    left: -300px;
     background-color: rgb(255, 255, 255,0.15);
     height: 100vh;
     width: 300px;
-    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+ 
     border-radius: 6px;
+    transition: all 0.3s ;
 }
 
 .sidebar_menu .logo{
@@ -53,6 +59,8 @@ height: 100vh;
     left: 200px;
     /* opacity: 0; */
     cursor: pointer;
+    transition: all 0.3s ;
+
 
 }
 .sidebar_menu .menu{
@@ -103,4 +111,12 @@ height: 100vh;
 .sidebar_menu .social_media i:hover{
     opacity: 1;
     font-size: larger;
+}
+#check:checked ~ .sidebar_menu{
+    left:0;
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+    
+}
+#check:checked ~ .btn_one i{
+    opacity: 0.5;
 }
